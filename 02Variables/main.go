@@ -2,30 +2,35 @@ package main
 
 import "fmt"
 
-func main()  {
+const LoginToken string = "sadasdassd";
+//first letter of capital signifies that var is public 
+func main() {
 	var username string = "siddhartha"
 	fmt.Println(username)
-	fmt.Printf("type of username : %T \n",username)
+	fmt.Printf("type of username : %T \n", username)
 
-	var isLoogedIn bool= false
-	fmt.Printf("isloogedin type: %T \n",isLoogedIn)
+	var isLoogedIn bool = false
+	fmt.Printf("isloogedin type: %T \n", isLoogedIn)
 
 	// var somevalue int= 255
 	// fmt.Printf("\n type of somevalue: %T",somevalue)
 
 	// uint8	8 bits/1 byte	0 to 255
-    // uint16	16 bits/2 byte	0 to 65535
-    // uint32	32 bits/4 byte	0 to 4294967295
-    // uint64	64 bits/8 byte	0 to 18446744073709551615   
-	var somevalue uint32= 256
+	// uint16	16 bits/2 byte	0 to 65535
+	// uint32	32 bits/4 byte	0 to 4294967295
+	// uint64	64 bits/8 byte	0 to 18446744073709551615
+	var somevalue uint32 = 256
 	fmt.Println(somevalue)
-	fmt.Printf("type of somevalue: %T \n",somevalue)
+	fmt.Printf("type of somevalue: %T \n", somevalue)
 
 	// float32	32 bits	-3.4e+38 to 3.4e+38.
-    // float64	64 bits	-1.7e+308 to +1.7e+308.
+	// float64	64 bits	-1.7e+308 to +1.7e+308.
 
-	// no var
+	// no var style
+	//inside any method you allowed to use this walrus operator only
+	// Noted you can not use as a globally variable as walrus operator
 	txt3 := "World 1"
 	fmt.Println(txt3)
+	fmt.Printf("Variable is of Type: %T \n",LoginToken)
 
 }

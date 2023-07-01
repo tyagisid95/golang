@@ -1,3 +1,3 @@
-module userinout
+module userinput
 
 go 1.19

@@ -6,14 +6,14 @@ import (
 	"time"
 )
 
-func main(){
+func main() {
 	fmt.Println("Switc case in golangs")
 
 	rand.Seed(time.Now().UnixNano())
-	diceNumber := rand.Intn(6) +1 //6=>0 to 5 range not inclusive
-	fmt.Println("Dice number is :",diceNumber)
+	diceNumber := rand.Intn(6) + 1 //6=>0 to 5 range not inclusive
+	fmt.Println("Dice number is :", diceNumber)
 
-	switch diceNumber{
+	switch diceNumber {
 	case 1:
 		fmt.Println("Dice value is 1  and you can open")
 	case 2:
